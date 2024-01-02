@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web UAP Syahrul</title>
+</head>
+
+<body>
+  <h1>Aplikasi Transaksi</h1>
+  <h2>Data Barang</h2>
+  <table id="barangTable">
+    <tr>
+      <th>Kode</th>
+      <th>Nama Barang</th>
+      <th>Harga</th>
+    </tr>
+  </table>
+  <h2>Input Transaksi</h2>
+  <table>
+    <form onsubmit="tambahTransaksi(event)">
+      <tr>
+        <th>
+          <label for="kodeInput">Masukan Kode:</label>
+        </th>
+        <th>
+          <input type="text" id="kodeInput" required />
+        </th>
+        <th>
+          <label for="quantityInput">Banyaknya Barang:</label>
+        </th>
+        <th>
+          <input type="number" id="quantityInput" min="1" required />
+        </th>
+        <th>
+          <button type="submit">submit</button>
+        </th>
+      </tr>
+    </form>
+  </table>
+  <script src="app.js"></script>
+</body>
+
+</html>
